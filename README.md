@@ -76,7 +76,7 @@ Universe prices
    Analytics + Dashboard
 ```
 ---
-Cointegration Screening Logic
+## Cointegration Screening Logic
 
 Step	Test	Threshold
 
@@ -91,7 +91,7 @@ Step	Test	Threshold
 5	Johansen rank	computed, displayed
 
 ---
-Kalman Filter — Why It Matters
+### Kalman Filter — Why It Matters
 
 A static OLS hedge ratio is estimated once and fixed for the entire backtest. In practice, pair relationships drift due to regime changes and carry shifts. The 2-state Kalman Filter updates β every single bar, capturing these drifts before they cause large losses.
 ```
@@ -100,7 +100,7 @@ Observation: p_a(t) = β(t)·p_b(t) + intercept(t) + ε
 Transition:  state(t) = state(t−1) + w  (random walk prior)
 ```
 ---
-Dashboard Output
+## Dashboard Output
 
 `statarb_dashboard.png` — 8-panel dashboard:
 
@@ -121,7 +121,7 @@ Trade P&L distribution (winners vs losers)
 Portfolio summary table (all pairs: Sharpe, win rate, profit factor, drawdown)
 
 ---
-References
+## References
 
 Engle & Granger (1987). Co-integration and Error Correction. Econometrica.
 
